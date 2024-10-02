@@ -1,3 +1,5 @@
+Jeff's notebook from the 2024 RDKit UGM (reusing some parts of the Symposium demo, but also with a new "Do's and Don'ts of `to_rdkit` and `from_rdkit`") is here: https://github.com/openforcefield/rdkit_ugm_2024_demo
+
 The 2024 Symposium demo is here: https://github.com/openforcefield/symposium_2024_demo/
 
 The 2024 Mini Workshop materials are here:
