@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: evaluator-server-pod
+spec:
+  containers:
+  - name: evaluator-server-pod
+    image: "ghcr.io/lilyminium/scrapbook-projects:tmp-evaluator-ambertools-distributed-server-v11"
+    resources:
+      limits:
+        memory: 10Gi
+        cpu: 1
+      requests:
+        memory: 10Gi
+        cpu: 1
+    volumeMounts:
+    - name: evaluator-storage-lw
+      mountPath: /evaluator-storage
+    - name: openeye-license
+      mountPath: /secrets/oe_license.txt
+      subPath: oe_license.txt
+    env:
+    - name: CLUSTER_NAME
+      value: "evaluator-lw"
+    - name: NAMESPACE
+      value: "openforcefield"
+    - name: SCHEDULER_PORT
+      value: "8786"
+    - name: SERVER_PORT
+      value: "8998"
+    - name: STORAGE_PATH
+      value: /evaluator-storage
+    - name: OE_LICENSE
+      value: /secrets/oe_license.txt
+  volumes:
+  - name: evaluator-storage-lw
+    persistentVolumeClaim:
+      claimName: evaluator-storage-lw
+  - name: openeye-license
+    secret:
+      secretName: oe-license-feb-2024
+
+
