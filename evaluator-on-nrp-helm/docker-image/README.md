@@ -9,3 +9,5 @@ docker build --platform linux/amd64 --tag $IMAGE_NAME .
 docker tag $IMAGE_NAME "ghcr.io/lilyminium/scrapbook-projects:${IMAGE_NAME}"
 docker push "ghcr.io/lilyminium/scrapbook-projects:${IMAGE_NAME}"
 ```
+
+The Dockerfile and run-server.sh scripts copy directly from the Dask docker image, which as of this time of writing is BSD-3 licensed.
