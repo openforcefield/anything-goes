@@ -19,100 +19,18 @@ from openff.evaluator.backends.backends import ComputeResources, QueueWorkerReso
 logger = logging.getLogger(__name__)
 
 
-parser = argparse.ArgumentParser(description="Run Evaluator server")
-parser.add_argument(
-    "--scheduler-address", "-sa",
-    type=str,
-    default="127.0.0.1",
-)
-parser.add_argument(
-    "--scheduler-port", "-sp",
-    type=int,
-    default=8080,
-)
-parser.add_argument(
-    "--cluster-name", "-n",
-    type=str,
-    default="evaluator-lw",
-)
+parser = argparse.ArgumentParser(description="Run Evaluator client")
 parser.add_argument(
     "--port", "-p",
     type=int,
     default=8998,
 )
 
-class DaskHelmInterface(BaseDaskBackend):
-    def __init__(
-        self,
-        address: str = "127.0.0.1",
-        port: int = 8080,  # $DASK_SCHEDULER_PORT
-        name: str = "evaluator-lw",
-        resources_per_worker=QueueWorkerResources(
-            number_of_gpus=1,
-            preferred_gpu_toolkit=ComputeResources.GPUToolkit.CUDA,
-        ),
-    ):
-        super().__init__(2, resources_per_worker)
-
-        assert isinstance(resources_per_worker, QueueWorkerResources)
-
-        if resources_per_worker.number_of_gpus > 0:
-            if resources_per_worker.number_of_gpus > 1:
-                raise ValueError("Only one GPU per worker is currently supported.")
-
-        self._cluster = f"tcp://{address}:{port}"
-        self._name = name
-        self._started = False
-
-    @staticmethod
-    def _wrapped_function(function, *args, **kwargs):
-        available_resources = kwargs["available_resources"]
-        gpu_assignments = kwargs.pop("gpu_assignments")
-
-        if available_resources.number_of_gpus > 0:
-            worker_id = distributed.get_worker().id
-
-            available_resources._gpu_device_indices = (
-                "0" if worker_id not in gpu_assignments else gpu_assignments[worker_id]
-            )
-
-            logger.info(
-                f"Launching a job with access to GPUs "
-                f"{available_resources._gpu_device_indices}"
-            )
-
-        return_value = _Multiprocessor.run(function, *args, **kwargs)
-        return return_value
-    
-    def stop(self):
-        logger.warning(
-            f"You will need to stop the cluster manually with ``helm delete {self._name}``"
-        )
-
-    def submit_task(self, function, *args, **kwargs):
-        key = kwargs.pop("key", None)
-
-        return self._client.submit(
-            self._wrapped_function,
-            function,
-            *args,
-            **kwargs,
-            key=key,
-            available_resources=self._resources_per_worker,
-            gpu_assignments={},
-        )
 
 def main(
     port: int = 8000,
-    scheduler_address: str = "127.0.0.1",
-    scheduler_port: int = 8080,
-    cluster_name: str = "evaluator-lw",
-
     data_set_path: str = "small-test-set.json",
     force_field_path: str = "openff-2.2.0.offxml",
-
-    working_directory: str = "/evaluator-storage/working-directory",
-    enable_data_caching: bool = True,
 ):
     import os
 
@@ -141,21 +59,6 @@ def main(
     estimation_options.add_schema("SimulationLayer", "Density", density_schema)
 
 
-
-    # backend = DaskHelmInterface(
-    #     port=scheduler_port,
-    #     address=scheduler_address,
-    #     name=cluster_name,
-    # )
-
-    # with backend:
-    #     server = EvaluatorServer(
-    #         calculation_backend=backend,
-    #         working_directory=working_directory,
-    #         port=port,
-    #         enable_data_caching=enable_data_caching,
-    #     )
-    #     with server:
     connection_options = ConnectionOptions(
         server_address="localhost",
         server_port=port,
@@ -190,7 +93,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     main(
         port=args.port,
-        scheduler_address=args.scheduler_address,
-        scheduler_port=args.scheduler_port,
-        cluster_name=args.cluster_name,
     )
