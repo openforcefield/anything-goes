@@ -1,0 +1,14 @@
+distributed:
+    scheduler:
+        allowed-failures: 10
+
+    worker:
+        daemon: False
+
+    comm:
+        timeouts:
+            connect: 10s
+            tcp: 30s
+
+    deploy:
+        lost-worker-timeout: 15s
