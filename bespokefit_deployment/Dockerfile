@@ -8,7 +8,7 @@ LABEL org.opencontainers.image.licenses=MIT
 # https://docs.python.org/3/using/cmdline.html#cmdoption-u
 ENV PYTHONUNBUFFERED=1
 
-COPY --chown=$MAMBA_USER:$MAMBA_USER devtools/conda-envs/bespokefit-server.yaml /tmp/env.yaml
+COPY --chown=$MAMBA_USER:$MAMBA_USER devtools/conda-envs/test-env.yaml /tmp/env.yaml
 COPY --chown=$MAMBA_USER:$MAMBA_USER openff /tmp/openff
 COPY --chown=$MAMBA_USER:$MAMBA_USER LICENSE README.md setup.cfg setup.py /tmp/
 RUN micromamba install -y -n base git -f /tmp/env.yaml && \
