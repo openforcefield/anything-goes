@@ -2,7 +2,7 @@
 
 This is a proof of concept method to deploy bespokefit as a webservice reachable via secure HTTPS connection managed by a traefik reverse proxy. 
 
-We have used this at ASAP to deploy inline forcefield generation for our Free Energy Calculation pipelines, using this setup on AWS
+We have used this at ASAPDiscovery to deploy inline forcefield generation for our Free Energy Calculation pipelines, using this setup on AWS
 
 
 # IMPORTANT NOTE
@@ -40,4 +40,4 @@ openff-bespoke executor watch --id 1
 # AWS notes 
 
 * Use an EC2 instance with at least 4 cores, 1 for the gateway and 3 for workers, 1 of each type. 
-* Assign an elastic IP to the 
+* Assign an elastic IP to the instance so it doesn't get re-jigged on restart
