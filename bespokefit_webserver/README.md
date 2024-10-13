@@ -12,9 +12,11 @@ Another reminder that this is provided under the terms of the MIT LICENSE as is,
 # HOWTO
 
 * copy the three files in this folder into the root of `openff-bespokefit
+* you probably need to add the requisite drivers (eg torsiondirve) to the relevant environment file that docker builds from. I haven't had a chance to do this properly.
 * edit the .env file and fill in the relevant variables
 * run `docker-compose up -d` 
 * check that the service is reachable on the client side with the below env file 
+
 
 ## Client side env file
 
