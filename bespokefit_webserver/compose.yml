@@ -1,0 +1,67 @@
+version: '3'
+
+networks:
+  internal:
+  web:
+
+services:
+  bespokefit:
+    command: openff-bespoke executor launch --launch-redis --n-optimizer-workers ${BEFLOW_N_OPT_WORKERS:?err} --n-qc-compute-workers ${BEFLOW_N_OPT_WORKERS:?err}  --n-fragmenter-workers ${BEFLOW_N_FRAG_WORKERS:?err} --directory bespoke-executor
+    build: .
+    container_name: "bepokefit-server"
+    hostname: "bespokefit"
+    ports:
+      - ${BEFLOW_GATEWAY_PORT:?err}:${BEFLOW_GATEWAY_PORT:?err}
+    volumes:
+      - type: bind
+        source: $HOME/.OpenEye/
+        target: /home/mambauser/.OpenEye/
+    env_file:
+      - .env
+    restart: always
+    networks:
+      - internal
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bespokefit.rule=Host(`${HOST_DOMAIN:?err}`)"
+      - "traefik.http.routers.bespokefit.entrypoints=websecure"
+      - "traefik.http.routers.bespokefit.tls.certresolver=myresolver"
+      - "traefik.docker.network=bespokefit_internal"
+      - "traefik.http.routers.bespokefit_route.entrypoints=websecure"
+      - "traefik.http.routers.bespokefit_route.rule=Host(`${HOST_DOMAIN:?err}`)"
+      - "traefik.http.routers.bespokefit_route.tls.certresolver=myresolver"
+      - "traefik.http.services.bespokefit_route.loadbalancer.server.url=http://${BEFLOW_GATEWAY_ADDRESS:?err}:${BEFLOW_GATEWAY_PORT:?err}"
+
+
+
+  reverse-proxy:
+    # The official v2 Traefik docker image
+    image: traefik:v2.9
+    networks:
+      - internal
+      - web
+    depends_on:
+      - bespokefit
+    restart: unless-stopped
+    command:
+      - "--log.level=DEBUG"
+      - "--providers.docker"
+      # Do not expose containers unless explicitly told so
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.docker.network=internal"
+      - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
+      - "--certificatesresolvers.myresolver.acme.email=${ACME_EMAIL}"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+      # http to https redirect
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+      - "--entrypoints.web.http.redirections.entrypoint.permanent=true"
+      - "--entrypoints.websecure.address=:443"
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./letsencrypt:/letsencrypt
