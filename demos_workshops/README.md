@@ -7,6 +7,7 @@ The 2024 Mini Workshop materials are here:
 * The “Things to Make and Do with OpenFF” Workshop ([Youtube](https://www.youtube.com/watch?v=qs2cVX2rpD4&t=1s), [Zenodo](https://zenodo.org/records/11557676))
 * The “SMIRNOFF Force Fields and You” Workshop ([Youtube](https://www.youtube.com/watch?v=qpmxqjKHlzY), [Zenodo](https://zenodo.org/records/11557496))
 * The “Protein Preparation in Jupyter” Workshop ([Youtube](https://www.youtube.com/watch?v=pwfKE6wPaMg), [Zenodo](https://zenodo.org/records/11557619))
+* (All 3 are also available on our [website](https://docs.openforcefield.org/en/latest/workshops/2024/) for a short amount of time, but the Zenodo archives above should be considered more permanent)
 
 The OpenFF Vignettes from the 2023 OMSF Workshop are here: https://github.com/openforcefield/2023-workshop-vignettes
 
