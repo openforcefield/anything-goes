@@ -1,0 +1,1367 @@
+INFO:__main__:Created PVC evaluator-storage-lw. State=Pending
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters/evaluator-lw "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters "HTTP/1.1 201 Created"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters/evaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters/evaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw&fieldSelector=status.phase%3DRunning "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services/evaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acid.zalan.do/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acme.cert-manager.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acme.constellix.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/admissionregistration.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/agent.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apiextensions.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apiregistration.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apm.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apm.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apps/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apps.nebula-graph.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/authentication.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/authorization.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling/v2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/batch/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/beat.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/bitnami.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/cdi.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ceph.rook.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/cert-manager.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/certificates.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/clabernetes.containerlab.dev/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/clone.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/config.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/constraints.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/constraints.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/coordination.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/crd.projectcalico.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/csi.storage.k8s.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/custom.metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/discovery.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/enterprisesearch.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/enterprisesearch.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/eventing.keda.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/events.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/expansion.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/export.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/external.metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/externaldata.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/externaldata.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/flowcontrol.apiserver.k8s.io/v1beta2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/flowcontrol.apiserver.k8s.io/v1beta3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1alpha2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-15-0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-17-0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-18-2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-19-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-25-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-27-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/k8s.cni.cncf.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/keda.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kibana.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kibana.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubeflow.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubeflow.org/v2beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubevirt.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubevirt.io/v1alpha3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/logstash.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/maps.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/migrations.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/monitoring.coreos.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/monitoring.coreos.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/multicluster.admiralty.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/networking.example.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/networking.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nfd.k8s-sigs.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/node.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nrp-sense.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nvidia.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nvidia.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/objectbucket.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/opennsa.nrp-nautilus.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/optiputer.net/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/piraeus.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/policy/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/pool.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ray.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ray.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/rbac.authorization.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/replication.storage.openshift.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/rook.io/v1alpha2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scheduling.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scylla.scylladb.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scylla.scylladb.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/snapshot.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/snapshot.storage.k8s.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/stackconfigpolicy.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/status.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/storage.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/subresources.kubevirt.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/subresources.kubevirt.io/v1alpha3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/upload.cdi.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcluster-name%3Devaluator-lw%2Cdask.org%2Fcomponent%3Dscheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acid.zalan.do/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acme.cert-manager.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acid.zalan.do/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acme.constellix.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acme.cert-manager.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/admissionregistration.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/agent.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acme.constellix.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apiextensions.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/admissionregistration.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apiregistration.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/agent.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apm.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apiextensions.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apm.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apiregistration.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apps/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apm.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apm.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apps.nebula-graph.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apps/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/authentication.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apps.nebula-graph.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/authorization.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/authentication.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/authorization.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling/v2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling/v2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/batch/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/beat.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/batch/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/bitnami.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/beat.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/cdi.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/bitnami.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ceph.rook.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/cdi.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/cert-manager.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ceph.rook.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/certificates.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/clabernetes.containerlab.dev/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/cert-manager.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/clone.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/certificates.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/config.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/clabernetes.containerlab.dev/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/clone.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/constraints.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/config.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/constraints.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/constraints.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/coordination.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/crd.projectcalico.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/constraints.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/csi.storage.k8s.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/coordination.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/crd.projectcalico.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/custom.metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/csi.storage.k8s.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/custom.metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/discovery.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/discovery.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/enterprisesearch.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/enterprisesearch.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/enterprisesearch.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/eventing.keda.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/enterprisesearch.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/events.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/eventing.keda.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/expansion.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/events.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/export.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/expansion.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/external.metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/export.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/externaldata.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/external.metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/externaldata.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/externaldata.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/flowcontrol.apiserver.k8s.io/v1beta2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/externaldata.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/flowcontrol.apiserver.k8s.io/v1beta3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/flowcontrol.apiserver.k8s.io/v1beta2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/flowcontrol.apiserver.k8s.io/v1beta3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1alpha2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1alpha2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-15-0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-17-0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-15-0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-18-2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-17-0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-19-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-18-2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-25-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-19-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-27-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-25-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/k8s.cni.cncf.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-27-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/keda.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/k8s.cni.cncf.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kibana.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/keda.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kibana.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kibana.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubeflow.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kibana.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubeflow.org/v2beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubeflow.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubeflow.org/v2beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubevirt.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubevirt.io/v1alpha3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubevirt.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/logstash.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubevirt.io/v1alpha3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/maps.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/logstash.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/maps.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/migrations.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/monitoring.coreos.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/migrations.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/monitoring.coreos.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/monitoring.coreos.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/multicluster.admiralty.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/monitoring.coreos.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/multicluster.admiralty.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/networking.example.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/networking.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/networking.example.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nfd.k8s-sigs.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/networking.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/node.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nfd.k8s-sigs.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nrp-sense.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/node.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nvidia.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nrp-sense.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nvidia.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nvidia.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/objectbucket.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nvidia.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/opennsa.nrp-nautilus.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/objectbucket.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/optiputer.net/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/opennsa.nrp-nautilus.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/piraeus.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/optiputer.net/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/policy/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/piraeus.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/pool.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/policy/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ray.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/pool.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ray.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ray.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/rbac.authorization.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ray.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/replication.storage.openshift.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/rbac.authorization.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/rook.io/v1alpha2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/replication.storage.openshift.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scheduling.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/rook.io/v1alpha2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scylla.scylladb.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scheduling.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scylla.scylladb.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scylla.scylladb.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/snapshot.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scylla.scylladb.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/snapshot.storage.k8s.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/snapshot.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/stackconfigpolicy.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/snapshot.storage.k8s.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/status.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/stackconfigpolicy.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/storage.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/status.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/subresources.kubevirt.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/storage.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/subresources.kubevirt.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/subresources.kubevirt.io/v1alpha3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/subresources.kubevirt.io/v1alpha3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/upload.cdi.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcluster-name%3Devaluator-lw%2Cdask.org%2Fcomponent%3Dscheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/upload.cdi.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcluster-name%3Devaluator-lw%2Cdask.org%2Fcomponent%3Dscheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq/portforward?name=evaluator-lw-scheduler-7dc687b55b-87mtq&namespace=openforcefield&ports=8786&_preload_content=false "HTTP/1.1 101 Switching Protocols"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq/portforward?name=evaluator-lw-scheduler-7dc687b55b-87mtq&namespace=openforcefield&ports=8786&_preload_content=false "HTTP/1.1 101 Switching Protocols"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskclusters?fieldSelector=metadata.name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcomponent%3Dscheduler%2Cdask.org%2Fcluster-name%3Devaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acid.zalan.do/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq/portforward?name=evaluator-lw-scheduler-7dc687b55b-87mtq&namespace=openforcefield&ports=8786&_preload_content=false "HTTP/1.1 101 Switching Protocols"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acme.cert-manager.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/services?fieldSelector=metadata.name%3Devaluator-lw-scheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/acme.constellix.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskworkergroups?fieldSelector=metadata.name%3Devaluator-lw-default "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/admissionregistration.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/agent.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apiextensions.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq/portforward?name=evaluator-lw-scheduler-7dc687b55b-87mtq&namespace=openforcefield&ports=8786&_preload_content=false "HTTP/1.1 101 Switching Protocols"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apiregistration.k8s.io/v1 "HTTP/1.1 200 OK"
+╭──────────────────── Creating KubeCluster 'evaluator-lw' ─────────────────────╮
+│                                                                              │
+│   DaskCluster                                                      Running   │
+│   Scheduler Pod                                                    Running   │
+│   Scheduler Service                                                Created   │
+│   Default Worker Group                                             Created   │
+│                                                                              │
+│ ⠋ Getting dashboard URL                                                      │
+╰──────────────────────────────────────────────────────────────────────────────╯INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apm.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PATCH https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskautoscalers/evaluator-lw "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apm.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskautoscalers "HTTP/1.1 201 Created"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apps/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/apps.nebula-graph.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/authentication.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/authorization.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq/portforward?name=evaluator-lw-scheduler-7dc687b55b-87mtq&namespace=openforcefield&ports=8786&_preload_content=false "HTTP/1.1 101 Switching Protocols"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling/v2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/autoscaling.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/batch/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq/portforward?name=evaluator-lw-scheduler-7dc687b55b-87mtq&namespace=openforcefield&ports=8786&_preload_content=false "HTTP/1.1 101 Switching Protocols"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/beat.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/bitnami.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/cdi.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+/Users/lily/micromamba/envs/evaluator-test-env/lib/python3.11/site-packages/distributed/client.py:1392: VersionMismatchWarning: Mismatched versions found
+
++-------------+----------------+-----------------+---------+
+| Package     | Client         | Scheduler       | Workers |
++-------------+----------------+-----------------+---------+
+| cloudpickle | 3.0.0          | 3.1.0           | None    |
+| msgpack     | 1.0.8          | 1.1.0           | None    |
+| python      | 3.11.9.final.0 | 3.11.10.final.0 | None    |
+| toolz       | 0.12.1         | 0.12.0          | None    |
++-------------+----------------+-----------------+---------+
+  warnings.warn(version_module.VersionMismatchWarning(msg[0]["warning"]))
+INFO:__main__:Calculating with backend <__main__.DaskKubernetesBackendMod object at 0x282c60d50>
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ceph.rook.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/cert-manager.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/certificates.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/clabernetes.containerlab.dev/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/clone.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PATCH https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskautoscalers/evaluator-lw "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/config.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/constraints.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/constraints.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/coordination.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/crd.projectcalico.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/csi.storage.k8s.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/custom.metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/discovery.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/elasticsearch.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/enterprisesearch.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/enterprisesearch.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/eventing.keda.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/events.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/expansion.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/export.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/external.metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/externaldata.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/externaldata.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/flowcontrol.apiserver.k8s.io/v1beta2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/flowcontrol.apiserver.k8s.io/v1beta3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1alpha2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/instancetype.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-15-0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-17-0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-18-2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-19-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-25-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/internal.linstor.linbit.com/v1-27-1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/k8s.cni.cncf.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/keda.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kibana.k8s.elastic.co/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kibana.k8s.elastic.co/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubeflow.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubeflow.org/v2beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubernetes.dask.org/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubevirt.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/kubevirt.io/v1alpha3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/logstash.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/maps.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/metrics.k8s.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/migrations.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/monitoring.coreos.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/monitoring.coreos.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/multicluster.admiralty.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/mutations.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/networking.example.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/networking.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nfd.k8s-sigs.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/node.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nrp-sense.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nvidia.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/nvidia.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/objectbucket.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/opennsa.nrp-nautilus.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/optiputer.net/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/piraeus.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/policy/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/pool.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ray.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/ray.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/rbac.authorization.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/replication.storage.openshift.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/rook.io/v1alpha2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scheduling.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scylla.scylladb.com/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/scylla.scylladb.com/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/snapshot.kubevirt.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/snapshot.storage.k8s.io/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/stackconfigpolicy.k8s.elastic.co/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/status.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/storage.k8s.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/subresources.kubevirt.io/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/subresources.kubevirt.io/v1alpha3 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1alpha1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/templates.gatekeeper.sh/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/apis/upload.cdi.kubevirt.io/v1beta1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods?labelSelector=dask.org%2Fcluster-name%3Devaluator-lw%2Cdask.org%2Fcomponent%3Dscheduler "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://67.58.53.147:6443/api/v1/namespaces/openforcefield/pods/evaluator-lw-scheduler-7dc687b55b-87mtq/portforward?name=evaluator-lw-scheduler-7dc687b55b-87mtq&namespace=openforcefield&ports=8787&_preload_content=false "HTTP/1.1 101 Switching Protocols"
+INFO:__main__:Copied server-existing.py to /evaluator-storage/server-existing.py
+INFO:httpx:HTTP Request: PATCH https://67.58.53.147:6443/apis/kubernetes.dask.org/v1/namespaces/openforcefield/daskautoscalers/evaluator-lw "HTTP/1.1 200 OK"
+RUNNING
+{'OE_LICENSE': '/secrets/oe_license.txt'}
+[{'name': 'OE_LICENSE', 'value': '/secrets/oe_license.txt', 'value_from': None}]
+INFO:__main__:Created deployment evaluator-server-lw. State={'available_replicas': None,
+ 'collision_count': None,
+ 'conditions': None,
+ 'observed_generation': None,
+ 'ready_replicas': None,
+ 'replicas': None,
+ 'unavailable_replicas': None,
+ 'updated_replicas': None}
+Pod name: evaluator-server-lw-699f79d444-c6667
+INFO:__main__:Forwarding port 8998 to pod evaluator-server-lw-699f79d444-c6667
+#======================================================================#
+#| [1m            Welcome to ForceBalance version 1.9.6! =D             [0m |#
+#| [1m                 Force Field Optimization System                  [0m |#
+#| [1m                                                                  [0m |#
+#| [1m                             Authors:                             [0m |#
+#| [1m                          Lee-Ping Wang                           [0m |#
+#| [1m                  Yudong Qiu, Keri A. McKiernan                   [0m |#
+#| [1m          Jeffrey R. Wagner, Hyesu Jang, Simon Boothroyd          [0m |#
+#| [1m          Arthur Vigil, Erik G. Brandt, John Stoppelman           [0m |#
+#| [1m                  Johnny Israeli, Matt Thompson                   [0m |#
+#======================================================================#
+
+                          [44m     [0m                                        
+                       [44m        [0m      [43m     [0m                              
+                    [44m        [0m   [44m  [0m    [43m         [0m                          
+                 [44m       [0m    [44m      [0m      [43m         [0m                       
+             [44m        [0m    [44m        [0m          [43m         [0m                    
+          [44m        [0m    [44m        [0m                 [43m        [0m                 
+       [44m        [0m    [44m       [0m                        [43m        [0m              
+    [44m        [0m   [44m        [0m                              [43m         [0m          
+   [44m      [0m   [44m        [0m               `.:+@@###@'          [43m         [0m       
+    [44m [0m    [44m        [0m          ,;'+###############.             [43m     [0m       
+      [44m        [0m         +################':`                    [43m [0m        
+      [44m     [0m              `.,,...####+.                                  
+                                ,#####      +##.               [44m   [0m   [44m   [0m
+ [43m    [0m                            #####      ######             [44m   [0m   [44m   [0m
+ [43m    [0m                ###'        ####'     :#####'             [44m   [0m   [44m   [0m
+ [43m    [0m                :####@      ####.    ,####'               [44m   [0m   [44m   [0m
+ [43m    [0m                 ######     ####    +###+                 [44m   [0m   [44m   [0m
+ [43m    [0m                  #####     ####   ###;                   [44m   [0m   [44m   [0m
+ [43m    [0m                   :##      ####  ++`                     [44m   [0m   [44m   [0m
+ [43m    [0m                            ####``..:;+##############+`   [44m   [0m   [44m   [0m
+ [43m    [0m             .,:;;'++##################################`  [44m   [0m   [44m   [0m
+ [43m    [0m    `############################++++''';;;;;;;;;;;'';    [44m   [0m   [44m   [0m
+ [43m    [0m      ,########':,.``       ####                          [44m   [0m   [44m   [0m
+ [43m    [0m                            ####                          [44m   [0m   [44m   [0m
+ [43m    [0m                            ####                          [44m   [0m   [44m   [0m
+ [43m    [0m                            ####                          [44m   [0m   [44m   [0m
+ [43m    [0m                            ####                          [44m   [0m   [44m   [0m
+ [43m    [0m                            ####                          [44m   [0m   [44m   [0m
+ [43m    [0m                            ####                          [44m   [0m   [44m   [0m
+ [43m    [0m                            ####                          [44m   [0m   [44m   [0m
+      [44m    [0m                       ####                                   
+     [44m        [0m                    ####                                   
+    [44m [0m    [44m       [0m                 ####                       [43m     [0m       
+   [44m     [0m    [44m        [0m             ####                    [43m        [0m       
+   [44m        [0m    [44m        [0m          ###                  [43m         [0m         
+      [44m        [0m    [44m        [0m        +`               [43m        [0m             
+          [44m        [0m   [44m        [0m                   [43m        [0m                
+             [44m        [0m   [44m         [0m           [43m         [0m                   
+                [44m        [0m    [44m       [0m      [43m         [0m                      
+                   [44m        [0m    [44m   [0m    [43m        [0m                          
+                      [44m        [0m       [43m      [0m                             
+                          [44m      [0m      [43m  [0m                                
+                             [44m  [0m                                         
+
+Reading options from file: optimize.in
+#========================================================#
+#| [95m  Options at their default values are not printed   [0m |#
+#| [95m        Use 'verbose_options True' to Enable        [0m |#
+#========================================================#
+Reading force field from file: force-field.offxml
+#=========================================================#
+#| [92m Starting parameter indices, physical values and IDs [0m |#
+#=========================================================#
+   0 [  1.5779e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]
+   1 [  1.4842e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]
+   2 [  1.6409e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   3 [  1.4498e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   4 [  1.5611e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]
+   5 [  1.4438e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]
+   6 [  1.3107e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   7 [  1.3771e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   8 [  1.4797e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+   9 [  1.3705e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+  10 [  1.4091e-02 ] : vdW/Atom/epsilon/[#1:1]-[#7]
+  11 [  6.1928e-01 ] : vdW/Atom/rmin_half/[#1:1]-[#7]
+  12 [  1.2326e-05 ] : vdW/Atom/epsilon/[#1:1]-[#8]
+  13 [  3.0000e-01 ] : vdW/Atom/rmin_half/[#1:1]-[#8]
+  14 [  8.6879e-02 ] : vdW/Atom/epsilon/[#6:1]
+  15 [  1.9534e+00 ] : vdW/Atom/rmin_half/[#6:1]
+  16 [  1.0884e-01 ] : vdW/Atom/epsilon/[#6X4:1]
+  17 [  1.8967e+00 ] : vdW/Atom/rmin_half/[#6X4:1]
+  18 [  2.1021e-01 ] : vdW/Atom/epsilon/[#8:1]
+  19 [  1.7060e+00 ] : vdW/Atom/rmin_half/[#8:1]
+  20 [  1.6847e-01 ] : vdW/Atom/epsilon/[#8X2H0+0:1]
+  21 [  1.6978e+00 ] : vdW/Atom/rmin_half/[#8X2H0+0:1]
+  22 [  2.0947e-01 ] : vdW/Atom/epsilon/[#8X2H1+0:1]
+  23 [  1.6821e+00 ] : vdW/Atom/rmin_half/[#8X2H1+0:1]
+  24 [  1.6769e-01 ] : vdW/Atom/epsilon/[#7:1]
+  25 [  1.7998e+00 ] : vdW/Atom/rmin_half/[#7:1]
+  26 [  2.5000e-01 ] : vdW/Atom/epsilon/[#16:1]
+  27 [  2.0000e+00 ] : vdW/Atom/rmin_half/[#16:1]
+  28 [  2.6560e-01 ] : vdW/Atom/epsilon/[#17:1]
+  29 [  1.8563e+00 ] : vdW/Atom/rmin_half/[#17:1]
+  30 [  3.2190e-01 ] : vdW/Atom/epsilon/[#35:1]
+  31 [  1.9698e+00 ] : vdW/Atom/rmin_half/[#35:1]
+-----------------------------------------------------------
+#=========================================================#
+#| [91m Rescaling Factors by Type (Lower Takes Precedence): [0m |#
+#=========================================================#
+   vdW/Atom/epsilon                     : 1.00000e-01
+   vdW/Atom/rmin_half                   : 1.00000e+00
+-----------------------------------------------------------
+#========================================================#
+#| [91m   Rescaling Types / Factors by Parameter Number:   [0m |#
+#========================================================#
+   0 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]
+   1 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]
+   2 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   3 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   4 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]
+   5 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]
+   6 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   7 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   8 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+   9 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+  10 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#1:1]-[#7]
+  11 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#7]
+  12 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#1:1]-[#8]
+  13 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#8]
+  14 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#6:1]
+  15 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#6:1]
+  16 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#6X4:1]
+  17 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#6X4:1]
+  18 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#8:1]
+  19 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#8:1]
+  20 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#8X2H0+0:1]
+  21 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#8X2H0+0:1]
+  22 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#8X2H1+0:1]
+  23 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#8X2H1+0:1]
+  24 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#7:1]
+  25 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#7:1]
+  26 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#16:1]
+  27 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#16:1]
+  28 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#17:1]
+  29 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#17:1]
+  30 [    vdW/Atom/epsilon              : 1.00000e-01 ] : vdW/Atom/epsilon/[#35:1]
+  31 [    vdW/Atom/rmin_half            : 1.00000e+00 ] : vdW/Atom/rmin_half/[#35:1]
+----------------------------------------------------------
+#========================================================#
+#| [92m               Setup for force field                [0m |#
+#========================================================#
+fnms                      ['force-field.offxml'] 
+priors                    OrderedDict([('vdW/Atom/epsilon', 0.1), ('vdW/Atom/rmin_half', 1.0)]) 
+----------------------------------------------------------
+Backing up: optimize.tmp/phys-prop to: optimize.bak/phys-prop_39.tar.bz2
+targets/phys-prop/options.json
+#========================================================#
+#| [92m             Loaded experimental data.              [0m |#
+#========================================================#
+#========================================================#
+#| [92m        Reference CO{solv}{x=1.000000} data         [0m |#
+#========================================================#
+Density 298.15 kelvin-101.325 kilopascal 0.7866000000000002 gram / milliliter+/-nan 
+----------------------------------------------------------
+#========================================================#
+#| [92m            Setup for target phys-prop :            [0m |#
+#========================================================#
+name                      phys-prop 
+type                      EVALUATOR_SMIRNOFF 
+tgtdir                    targets/phys-prop 
+evaluator_input           options.json 
+----------------------------------------------------------
+#========================================================#
+#| [92m        SMIRNOFF Parameter Coverage Analysis        [0m |#
+#========================================================#
+Force field assignment data written to /Users/lily/pydev/anything-goes/evaluator-on-kubecluster/smirnoff_parameter_assignments.json
+ idx Parameter                                                                                                   Count
+----------------------------------------------------------------------------------------------------------------------
+   0 vdW/Atom/epsilon/[#1:1]-[#6X4]                                                                       :          0
+   1 vdW/Atom/rmin_half/[#1:1]-[#6X4]                                                                     :          0
+   2 vdW/Atom/epsilon/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]                                                :          0
+   3 vdW/Atom/rmin_half/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]                                              :          0
+   4 vdW/Atom/epsilon/[#1:1]-[#6X3]                                                                       :          0
+   5 vdW/Atom/rmin_half/[#1:1]-[#6X3]                                                                     :          0
+   6 vdW/Atom/epsilon/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]                                                :          0
+   7 vdW/Atom/rmin_half/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]                                              :          0
+   8 vdW/Atom/epsilon/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]                       :          0
+   9 vdW/Atom/rmin_half/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]                     :          0
+  10 vdW/Atom/epsilon/[#1:1]-[#7]                                                                         :          0
+  11 vdW/Atom/rmin_half/[#1:1]-[#7]                                                                       :          0
+  12 vdW/Atom/epsilon/[#1:1]-[#8]                                                                         :          0
+  13 vdW/Atom/rmin_half/[#1:1]-[#8]                                                                       :          0
+  14 vdW/Atom/epsilon/[#6:1]                                                                              :          0
+  15 vdW/Atom/rmin_half/[#6:1]                                                                            :          0
+  16 vdW/Atom/epsilon/[#6X4:1]                                                                            :          0
+  17 vdW/Atom/rmin_half/[#6X4:1]                                                                          :          0
+  18 vdW/Atom/epsilon/[#8:1]                                                                              :          0
+  19 vdW/Atom/rmin_half/[#8:1]                                                                            :          0
+  20 vdW/Atom/epsilon/[#8X2H0+0:1]                                                                        :          0
+  21 vdW/Atom/rmin_half/[#8X2H0+0:1]                                                                      :          0
+  22 vdW/Atom/epsilon/[#8X2H1+0:1]                                                                        :          0
+  23 vdW/Atom/rmin_half/[#8X2H1+0:1]                                                                      :          0
+  24 vdW/Atom/epsilon/[#7:1]                                                                              :          0
+  25 vdW/Atom/rmin_half/[#7:1]                                                                            :          0
+  26 vdW/Atom/epsilon/[#16:1]                                                                             :          0
+  27 vdW/Atom/rmin_half/[#16:1]                                                                           :          0
+  28 vdW/Atom/epsilon/[#17:1]                                                                             :          0
+  29 vdW/Atom/rmin_half/[#17:1]                                                                           :          0
+  30 vdW/Atom/epsilon/[#35:1]                                                                             :          0
+  31 vdW/Atom/rmin_half/[#35:1]                                                                           :          0
+SMIRNOFF Parameter Coverage Analysis result: 0/32 parameters are covered.
+----------------------------------------------------------------------------------------------------------------------
+Using parabolic regularization (Gaussian prior) with strength 1.0e+00 (+), 0.0e+00 (x)
+#========================================================#
+#| [92m           Setup for objective function :           [0m |#
+#========================================================#
+penalty_additive          1.0 
+normalize_weights         False 
+----------------------------------------------------------
+#========================================================#
+#| [92m                Setup for optimizer                 [0m |#
+#========================================================#
+jobtype                   OPTIMIZE 
+trust0                    0.25 
+mintrust                  0.05 
+eps                       0.01 
+convergence_gradient      0.0001 
+maxstep                   1 
+adapt_fac                 0.2 
+adapt_damp                1.0 
+print_hess                True 
+err_tol                   1.0 
+input_file                optimize.in 
+criteria                  3 
+----------------------------------------------------------
+Calculation started at 2024-11-14 10:49 AM
+#========================================================#
+#| [1m                  Main Optimizer                    [0m |#
+#| [1m   Newton-Raphson Method (Adaptive Trust Radius)    [0m |#
+#| [1m                                                    [0m |#
+#| [1m       [0mConvergence criteria (3 of 3 needed):        [0m |#
+#| [1m          [0mObjective Function  : 1.000e-04           [0m |#
+#| [1m          [0mNorm of Gradient    : 1.000e-04           [0m |#
+#| [1m          [0mParameter step size : 1.000e-04           [0m |#
+#========================================================#
+#========================================================#
+#|       Color Key for Objective Function -=X2=-        |#
+#|  [1mBold[0m = Initial step                                 |#
+#|  [92mGreen = Current lowest value of objective function[0m  |#
+#|  [91mRed = Objective function rises, step rejected[0m       |#
+#|  [0mNo color = Not at the lowest value                  |#
+#========================================================#
+#========================================================#
+#| [94m     Iteration 0: Evaluating objective function     [0m |#
+#| [94m        and derivatives through second order        [0m |#
+#========================================================#
+==FB ==
+Request id=3bf553f439c549f4a731147baeb64e3f
+None
+Requesting the estimation of 1 properties, and their gradients with respect to 32 parameters.
+
+1 properties were estimated using the SimulationLayer layer.
+
+
+#=============================================================================================================#
+#| [1;94m                                            phys-prop Density                                            [0m |#
+#| [1;94m Temperature  Pressure Substance  Reference  Calculated +- Stdev     Delta    Weight    Denom     Term   [0m |#
+#=============================================================================================================#
+  298.15 kelvin 1.0 standard_atmosphere CO{solv}{x=1.000000}     0.787          0.766 +- 0.000    -0.020   1.00000   0.05000   0.16414  
+---------------------------------------------------------------------------------------------------------------
+#====================================================================#
+#| [94m                  Objective Function Breakdown                  [0m |#
+#| [94m  Target Name              Residual  x  Weight  =  Contribution [0m |#
+#====================================================================#
+phys-prop                      0.16414      1.000 [94m     1.64142e-01[0m 
+Regularization                 0.00000      1.000 [94m     0.00000e+00[0m 
+Total                                             [94m     1.64142e-01[0m 
+----------------------------------------------------------------------
+
+  Step       |k|        |dk|       |grad|       -=X2=-     Delta(X2)    StepQual
+     0   0.000e+00   0.000e+00   1.171e+01[1m   1.64142e-01[0m   0.000e+00      0.000
+
+#========================================================#
+#| [94m                   Total Gradient                   [0m |#
+#========================================================#
+   0 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]
+   1 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]
+   2 [ -4.02491722e+00 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   3 [  7.40140106e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   4 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]
+   5 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]
+   6 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   7 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   8 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+   9 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+  10 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#1:1]-[#7]
+  11 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#7]
+  12 [ -7.77266034e+00 ] : vdW/Atom/epsilon/[#1:1]-[#8]
+  13 [ -1.05324430e-03 ] : vdW/Atom/rmin_half/[#1:1]-[#8]
+  14 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#6:1]
+  15 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#6:1]
+  16 [ -1.72605560e+00 ] : vdW/Atom/epsilon/[#6X4:1]
+  17 [  2.78429908e-02 ] : vdW/Atom/rmin_half/[#6X4:1]
+  18 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#8:1]
+  19 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#8:1]
+  20 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#8X2H0+0:1]
+  21 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#8X2H0+0:1]
+  22 [ -7.08535076e-01 ] : vdW/Atom/epsilon/[#8X2H1+0:1]
+  23 [  1.49230457e+00 ] : vdW/Atom/rmin_half/[#8X2H1+0:1]
+  24 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#7:1]
+  25 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#7:1]
+  26 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#16:1]
+  27 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#16:1]
+  28 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#17:1]
+  29 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#17:1]
+  30 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#35:1]
+  31 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#35:1]
+----------------------------------------------------------
+#========================================================#
+#| [94m                   Total Hessian                    [0m |#
+#========================================================#
+ 3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  5.13473255e+01 -9.07445613e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  9.52963699e+01  1.29132568e-02  0.00000000e+00  0.00000000e+00  2.11622310e+01 -3.41367798e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  8.68696401e+00 -1.82963364e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00 -9.07445613e+01  1.68869741e+02  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -1.75240040e+02 -2.37461262e-02  0.00000000e+00  0.00000000e+00 -3.89151255e+01  6.27739615e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -1.59744167e+01  3.36450457e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  9.52963699e+01 -1.75240040e+02  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  1.86030199e+02  2.49372480e-02  0.00000000e+00  0.00000000e+00  4.08671345e+01 -6.59227459e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  1.67757042e+01 -3.53327040e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  1.29132568e-02 -2.37461262e-02  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  2.49372480e-02  2.00000338e+00  0.00000000e+00  0.00000000e+00  5.53775345e-03 -8.93294618e-05  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  2.27321330e-03 -4.78780335e-03  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  2.11622310e+01 -3.89151255e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  4.08671345e+01  5.53775345e-03  0.00000000e+00  0.00000000e+00  1.10752643e+01 -1.46393024e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.72533946e+00 -7.84624686e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00 -3.41367798e-01  6.27739615e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -6.59227459e-01 -8.93294618e-05  0.00000000e+00  0.00000000e+00 -1.46393024e-01  2.00236146e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -6.00934245e-02  1.26567753e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  8.68696401e+00 -1.59744167e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  1.67757042e+01  2.27321330e-03  0.00000000e+00  0.00000000e+00  3.72533946e+00 -6.00934245e-02  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.52922865e+00 -3.22083547e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00 -1.82963364e+01  3.36450457e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -3.53327040e+01 -4.78780335e-03  0.00000000e+00  0.00000000e+00 -7.84624686e+00  1.26567753e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -3.22083547e+00  8.78366910e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00 
+----------------------------------------------------------
+Calculating nonlinear optimization step
+Newton-Raphson step found (length 2.7903e-02)
+#========================================================#
+#| [95m  Mathematical Parameters (Current + Step = Next)   [0m |#
+#========================================================#
+   0 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]
+   1 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]
+   2 [  0.0000e+00 + 9.5914e-03 =  9.5914e-03 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   3 [  0.0000e+00 - 1.7638e-02 = -1.7638e-02 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   4 [  0.0000e+00 + 7.8886e-31 =  7.8886e-31 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]
+   5 [  0.0000e+00 + 5.9165e-31 =  5.9165e-31 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]
+   6 [  0.0000e+00 + 1.9722e-31 =  1.9722e-31 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   7 [  0.0000e+00 - 4.9304e-32 = -4.9304e-32 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   8 [  0.0000e+00 - 3.0815e-33 = -3.0815e-33 ] : vdW/Atom/epsilon/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+   9 [  0.0000e+00 - 1.2326e-31 = -1.2326e-31 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+  10 [  0.0000e+00 + 2.1570e-32 =  2.1570e-32 ] : vdW/Atom/epsilon/[#1:1]-[#7]
+  11 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#7]
+  12 [  0.0000e+00 + 1.8522e-02 =  1.8522e-02 ] : vdW/Atom/epsilon/[#1:1]-[#8]
+  13 [  0.0000e+00 + 2.5099e-06 =  2.5099e-06 ] : vdW/Atom/rmin_half/[#1:1]-[#8]
+  14 [  0.0000e+00 - 3.0815e-33 = -3.0815e-33 ] : vdW/Atom/epsilon/[#6:1]
+  15 [  0.0000e+00 + 1.5407e-33 =  1.5407e-33 ] : vdW/Atom/rmin_half/[#6:1]
+  16 [  0.0000e+00 + 4.1132e-03 =  4.1132e-03 ] : vdW/Atom/epsilon/[#6X4:1]
+  17 [  0.0000e+00 - 6.6350e-05 = -6.6350e-05 ] : vdW/Atom/rmin_half/[#6X4:1]
+  18 [  0.0000e+00 - 3.0815e-33 = -3.0815e-33 ] : vdW/Atom/epsilon/[#8:1]
+  19 [  0.0000e+00 + 3.4667e-33 =  3.4667e-33 ] : vdW/Atom/rmin_half/[#8:1]
+  20 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/epsilon/[#8X2H0+0:1]
+  21 [  0.0000e+00 - 1.7106e-49 = -1.7106e-49 ] : vdW/Atom/rmin_half/[#8X2H0+0:1]
+  22 [  0.0000e+00 + 1.6884e-03 =  1.6884e-03 ] : vdW/Atom/epsilon/[#8X2H1+0:1]
+  23 [  0.0000e+00 - 3.5562e-03 = -3.5562e-03 ] : vdW/Atom/rmin_half/[#8X2H1+0:1]
+  24 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/epsilon/[#7:1]
+  25 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/rmin_half/[#7:1]
+  26 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/epsilon/[#16:1]
+  27 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/rmin_half/[#16:1]
+  28 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/epsilon/[#17:1]
+  29 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/rmin_half/[#17:1]
+  30 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/epsilon/[#35:1]
+  31 [  0.0000e+00 + 0.0000e+00 =  0.0000e+00 ] : vdW/Atom/rmin_half/[#35:1]
+----------------------------------------------------------
+#========================================================#
+#| [95m    Physical Parameters (Current + Step = Next)     [0m |#
+#========================================================#
+   0 [  1.5779e-02 + 0.0000e+00 =  1.5779e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]
+   1 [  1.4842e+00 + 0.0000e+00 =  1.4842e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]
+   2 [  1.6409e-02 + 9.5914e-04 =  1.7368e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   3 [  1.4498e+00 - 1.7638e-02 =  1.4321e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   4 [  1.5611e-02 + 0.0000e+00 =  1.5611e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]
+   5 [  1.4438e+00 + 0.0000e+00 =  1.4438e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]
+   6 [  1.3107e-02 + 0.0000e+00 =  1.3107e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   7 [  1.3771e+00 + 0.0000e+00 =  1.3771e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   8 [  1.4797e-02 + 0.0000e+00 =  1.4797e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+   9 [  1.3705e+00 + 0.0000e+00 =  1.3705e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+  10 [  1.4091e-02 + 0.0000e+00 =  1.4091e-02 ] : vdW/Atom/epsilon/[#1:1]-[#7]
+  11 [  6.1928e-01 + 0.0000e+00 =  6.1928e-01 ] : vdW/Atom/rmin_half/[#1:1]-[#7]
+  12 [  1.2326e-05 + 1.8522e-03 =  1.8646e-03 ] : vdW/Atom/epsilon/[#1:1]-[#8]
+  13 [  3.0000e-01 + 2.5099e-06 =  3.0000e-01 ] : vdW/Atom/rmin_half/[#1:1]-[#8]
+  14 [  8.6879e-02 + 0.0000e+00 =  8.6879e-02 ] : vdW/Atom/epsilon/[#6:1]
+  15 [  1.9534e+00 + 0.0000e+00 =  1.9534e+00 ] : vdW/Atom/rmin_half/[#6:1]
+  16 [  1.0884e-01 + 4.1132e-04 =  1.0925e-01 ] : vdW/Atom/epsilon/[#6X4:1]
+  17 [  1.8967e+00 - 6.6350e-05 =  1.8966e+00 ] : vdW/Atom/rmin_half/[#6X4:1]
+  18 [  2.1021e-01 + 0.0000e+00 =  2.1021e-01 ] : vdW/Atom/epsilon/[#8:1]
+  19 [  1.7060e+00 + 0.0000e+00 =  1.7060e+00 ] : vdW/Atom/rmin_half/[#8:1]
+  20 [  1.6847e-01 + 0.0000e+00 =  1.6847e-01 ] : vdW/Atom/epsilon/[#8X2H0+0:1]
+  21 [  1.6978e+00 + 0.0000e+00 =  1.6978e+00 ] : vdW/Atom/rmin_half/[#8X2H0+0:1]
+  22 [  2.0947e-01 + 1.6884e-04 =  2.0964e-01 ] : vdW/Atom/epsilon/[#8X2H1+0:1]
+  23 [  1.6821e+00 - 3.5562e-03 =  1.6785e+00 ] : vdW/Atom/rmin_half/[#8X2H1+0:1]
+  24 [  1.6769e-01 + 0.0000e+00 =  1.6769e-01 ] : vdW/Atom/epsilon/[#7:1]
+  25 [  1.7998e+00 + 0.0000e+00 =  1.7998e+00 ] : vdW/Atom/rmin_half/[#7:1]
+  26 [  2.5000e-01 + 0.0000e+00 =  2.5000e-01 ] : vdW/Atom/epsilon/[#16:1]
+  27 [  2.0000e+00 + 0.0000e+00 =  2.0000e+00 ] : vdW/Atom/rmin_half/[#16:1]
+  28 [  2.6560e-01 + 0.0000e+00 =  2.6560e-01 ] : vdW/Atom/epsilon/[#17:1]
+  29 [  1.8563e+00 + 0.0000e+00 =  1.8563e+00 ] : vdW/Atom/rmin_half/[#17:1]
+  30 [  3.2190e-01 + 0.0000e+00 =  3.2190e-01 ] : vdW/Atom/epsilon/[#35:1]
+  31 [  1.9698e+00 + 0.0000e+00 =  1.9698e+00 ] : vdW/Atom/rmin_half/[#35:1]
+----------------------------------------------------------
+Input file with saved parameters: optimize.sav
+#========================================================#
+#| [94m     Iteration 1: Evaluating objective function     [0m |#
+#| [94m        and derivatives through second order        [0m |#
+#========================================================#
+==FB ==
+Request id=efc72f514d0841c6af3f03b47fd34cd4
+None
+Requesting the estimation of 1 properties, and their gradients with respect to 32 parameters.
+
+1 properties were estimated using the SimulationLayer layer.
+
+
+#=============================================================================================================#
+#| [1;94m                                            phys-prop Density                                            [0m |#
+#| [1;94m Temperature  Pressure Substance  Reference  Calculated +- Stdev     Delta    Weight    Denom     Term   [0m |#
+#=============================================================================================================#
+  298.15 kelvin 1.0 standard_atmosphere CO{solv}{x=1.000000}     0.787          0.783 +- 0.000    -0.004   1.00000   0.05000   0.00543  
+---------------------------------------------------------------------------------------------------------------
+#===================================================================================#
+#| [94m                         Objective Function Breakdown                          [0m |#
+#| [94m  Target Name              Residual  x  Weight  =  Contribution (Current-Prev) [0m |#
+#===================================================================================#
+phys-prop                      0.00543      1.000 [92m     5.43299e-03[0m ( -1.587e-01 ) 
+Regularization                 0.00078      1.000 [91m     7.78576e-04[0m ( +7.786e-04 ) 
+Total                                             [92m     6.21157e-03[0m ( -1.579e-01 ) 
+-------------------------------------------------------------------------------------
+Creating the directory /Users/lily/pydev/anything-goes/evaluator-on-kubecluster/result/optimize to print the force field
+#========================================================================#
+#|  The force field has been written to the result/optimize directory.  |#
+#|    Input file with optimization parameters saved to optimize.sav.    |#
+#========================================================================#
+
+  Step       |k|        |dk|       |grad|       -=X2=-     Delta(X2)    StepQual
+     1   2.790e-02   2.790e-02   2.517e+00[92m   6.21157e-03[0m  -1.579e-01      0.967
+
+#========================================================#
+#| [94m                   Total Gradient                   [0m |#
+#========================================================#
+   0 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]
+   1 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]
+   2 [ -5.75376345e-01 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   3 [  1.79909382e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   4 [  1.57772181e-30 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]
+   5 [  1.18329136e-30 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]
+   6 [  3.94430453e-31 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   7 [ -9.86076132e-32 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   8 [ -6.16297582e-33 ] : vdW/Atom/epsilon/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+   9 [ -2.46519033e-31 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+  10 [  4.31408308e-32 ] : vdW/Atom/epsilon/[#1:1]-[#7]
+  11 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#7]
+  12 [  1.09403212e-01 ] : vdW/Atom/epsilon/[#1:1]-[#8]
+  13 [  5.60343846e-02 ] : vdW/Atom/rmin_half/[#1:1]-[#8]
+  14 [ -6.16297582e-33 ] : vdW/Atom/epsilon/[#6:1]
+  15 [  3.08148791e-33 ] : vdW/Atom/rmin_half/[#6:1]
+  16 [ -3.32620322e-01 ] : vdW/Atom/epsilon/[#6X4:1]
+  17 [  1.25122191e-01 ] : vdW/Atom/rmin_half/[#6X4:1]
+  18 [ -6.16297582e-33 ] : vdW/Atom/epsilon/[#8:1]
+  19 [  6.93334780e-33 ] : vdW/Atom/rmin_half/[#8:1]
+  20 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#8X2H0+0:1]
+  21 [ -3.42113883e-49 ] : vdW/Atom/rmin_half/[#8X2H0+0:1]
+  22 [ -6.66299193e-02 ] : vdW/Atom/epsilon/[#8X2H1+0:1]
+  23 [  1.61947841e+00 ] : vdW/Atom/rmin_half/[#8X2H1+0:1]
+  24 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#7:1]
+  25 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#7:1]
+  26 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#16:1]
+  27 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#16:1]
+  28 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#17:1]
+  29 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#17:1]
+  30 [  0.00000000e+00 ] : vdW/Atom/epsilon/[#35:1]
+  31 [  0.00000000e+00 ] : vdW/Atom/rmin_half/[#35:1]
+----------------------------------------------------------
+#========================================================#
+#| [94m                   Total Hessian                    [0m |#
+#========================================================#
+ 3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  3.45327727e+01 -1.00372030e+02  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -3.95927928e+00 -3.06578505e+00  0.00000000e+00  0.00000000e+00  1.86502704e+01 -6.85363067e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.83059538e+00 -8.90029298e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00 -1.00372030e+02  3.11673709e+02  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  1.22154021e+01  9.45874094e+00  0.00000000e+00  0.00000000e+00 -5.75409148e+01  2.11452257e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -1.18183789e+01  2.74597090e+02  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00 -3.95927928e+00  1.22154021e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  2.48184926e+00  3.73109891e-01  0.00000000e+00  0.00000000e+00 -2.26976133e+00  8.34095458e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -4.66188268e-01  1.08317683e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00 -3.06578505e+00  9.45874094e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.73109891e-01  2.28890984e+00  0.00000000e+00  0.00000000e+00 -1.75754219e+00  6.45864362e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -3.60983129e-01  8.38735310e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  1.86502704e+01 -5.75409148e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -2.26976133e+00 -1.75754219e+00  0.00000000e+00  0.00000000e+00  1.26917597e+01 -3.92902464e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  2.19598989e+00 -5.10232782e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00 -6.85363067e+00  2.11452257e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  8.34095458e-01  6.45864362e-01  0.00000000e+00  0.00000000e+00 -3.92902464e+00  3.44384414e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -8.06985812e-01  1.87501144e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  3.83059538e+00 -1.18183789e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -4.66188268e-01 -3.60983129e-01  0.00000000e+00  0.00000000e+00  2.19598989e+00 -8.06985812e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  2.45103629e+00 -1.04797158e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00 -8.90029298e+01  2.74597090e+02  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  1.08317683e+01  8.38735310e+00  0.00000000e+00  0.00000000e+00 -5.10232782e+01  1.87501144e+01  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 -1.04797158e+01  2.45493587e+02  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00  0.00000000e+00 
+ 0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  0.00000000e+00  3.00000000e+00 
+----------------------------------------------------------
+Calculating nonlinear optimization step
+Newton-Raphson step found (length 2.2323e-02)
+Maximum number of optimization steps reached (1)
+#========================================================#
+#| [92m                [0m[1;91mConvergence Failure[0m                 [0m |#
+#| [92m           Final objective function value           [0m |#
+#| [92m  Full:  6.211568e-03  Un-penalized:  5.432992e-03  [0m |#
+#========================================================#
+#========================================================#
+#| [94m           Final optimization parameters:           [0m |#
+#========================================================#
+   0 [  0.0000e+00 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]
+   1 [  0.0000e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]
+   2 [  4.9974e-03 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   3 [ -1.5418e-02 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   4 [ -4.3438e-18 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]
+   5 [ -3.4822e-18 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]
+   6 [  4.3812e-18 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   7 [  1.8183e-17 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   8 [  1.4450e-17 ] : vdW/Atom/epsilon/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+   9 [  1.3655e-18 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+  10 [  6.5237e-19 ] : vdW/Atom/epsilon/[#1:1]-[#7]
+  11 [ -3.6342e-19 ] : vdW/Atom/rmin_half/[#1:1]-[#7]
+  12 [ -6.0819e-04 ] : vdW/Atom/epsilon/[#1:1]-[#8]
+  13 [ -4.7094e-04 ] : vdW/Atom/rmin_half/[#1:1]-[#8]
+  14 [ -1.1469e-18 ] : vdW/Atom/epsilon/[#6:1]
+  15 [  5.8246e-20 ] : vdW/Atom/rmin_half/[#6:1]
+  16 [  2.8649e-03 ] : vdW/Atom/epsilon/[#6X4:1]
+  17 [ -1.0528e-03 ] : vdW/Atom/rmin_half/[#6X4:1]
+  18 [ -1.0272e-33 ] : vdW/Atom/epsilon/[#8:1]
+  19 [  1.1556e-33 ] : vdW/Atom/rmin_half/[#8:1]
+  20 [  0.0000e+00 ] : vdW/Atom/epsilon/[#8X2H0+0:1]
+  21 [ -5.7019e-50 ] : vdW/Atom/rmin_half/[#8X2H0+0:1]
+  22 [  5.8842e-04 ] : vdW/Atom/epsilon/[#8X2H1+0:1]
+  23 [ -1.3672e-02 ] : vdW/Atom/rmin_half/[#8X2H1+0:1]
+  24 [  0.0000e+00 ] : vdW/Atom/epsilon/[#7:1]
+  25 [  0.0000e+00 ] : vdW/Atom/rmin_half/[#7:1]
+  26 [  0.0000e+00 ] : vdW/Atom/epsilon/[#16:1]
+  27 [  0.0000e+00 ] : vdW/Atom/rmin_half/[#16:1]
+  28 [  0.0000e+00 ] : vdW/Atom/epsilon/[#17:1]
+  29 [  0.0000e+00 ] : vdW/Atom/rmin_half/[#17:1]
+  30 [  0.0000e+00 ] : vdW/Atom/epsilon/[#35:1]
+  31 [  0.0000e+00 ] : vdW/Atom/rmin_half/[#35:1]
+#========================================================#
+#| [94m             Final physical parameters:             [0m |#
+#========================================================#
+   0 [  1.5779e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]
+   1 [  1.4842e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]
+   2 [  1.6909e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   3 [  1.4344e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+   4 [  1.5611e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]
+   5 [  1.4438e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]
+   6 [  1.3107e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   7 [  1.3771e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+   8 [  1.4797e-02 ] : vdW/Atom/epsilon/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+   9 [  1.3705e+00 ] : vdW/Atom/rmin_half/[#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+  10 [  1.4091e-02 ] : vdW/Atom/epsilon/[#1:1]-[#7]
+  11 [  6.1928e-01 ] : vdW/Atom/rmin_half/[#1:1]-[#7]
+  12 [  0.0000e+00 ] : vdW/Atom/epsilon/[#1:1]-[#8]
+  13 [  2.9953e-01 ] : vdW/Atom/rmin_half/[#1:1]-[#8]
+  14 [  8.6879e-02 ] : vdW/Atom/epsilon/[#6:1]
+  15 [  1.9534e+00 ] : vdW/Atom/rmin_half/[#6:1]
+  16 [  1.0913e-01 ] : vdW/Atom/epsilon/[#6X4:1]
+  17 [  1.8956e+00 ] : vdW/Atom/rmin_half/[#6X4:1]
+  18 [  2.1021e-01 ] : vdW/Atom/epsilon/[#8:1]
+  19 [  1.7060e+00 ] : vdW/Atom/rmin_half/[#8:1]
+  20 [  1.6847e-01 ] : vdW/Atom/epsilon/[#8X2H0+0:1]
+  21 [  1.6978e+00 ] : vdW/Atom/rmin_half/[#8X2H0+0:1]
+  22 [  2.0953e-01 ] : vdW/Atom/epsilon/[#8X2H1+0:1]
+  23 [  1.6684e+00 ] : vdW/Atom/rmin_half/[#8X2H1+0:1]
+  24 [  1.6769e-01 ] : vdW/Atom/epsilon/[#7:1]
+  25 [  1.7998e+00 ] : vdW/Atom/rmin_half/[#7:1]
+  26 [  2.5000e-01 ] : vdW/Atom/epsilon/[#16:1]
+  27 [  2.0000e+00 ] : vdW/Atom/rmin_half/[#16:1]
+  28 [  2.6560e-01 ] : vdW/Atom/epsilon/[#17:1]
+  29 [  1.8563e+00 ] : vdW/Atom/rmin_half/[#17:1]
+  30 [  3.2190e-01 ] : vdW/Atom/epsilon/[#35:1]
+  31 [  1.9698e+00 ] : vdW/Atom/rmin_half/[#35:1]
+----------------------------------------------------------
+Backing up result/optimize/force-field.offxml -> result/optimize/force-field_1.offxml
+#========================================================================#
+#|  The force field has been written to the result/optimize directory.  |#
+#|    Input file with optimization parameters saved to optimize.sav.    |#
+#========================================================================#
+Wall time since calculation start: 1813.1 seconds
+#==========================================================#
+#| [40;93m It is possible to commit no mistakes and still lose. [0m |#
+#| [40;93m        That is not a weakness. That is life.         [0m |#
+#==========================================================#
+Cleaning up
+CompletedProcess(args=['ForceBalance.py', 'optimize.in'], returncode=0)
