@@ -86,10 +86,16 @@ interchange = sage_ff14sb.create_interchange(
 potential_keys_to_remove = list()
 topology_keys_to_remove = list()
 
+nagl_indices = tuple(
+    key.atom_indices[0]
+    for key, val in interchange["Electrostatics"].key_map.items()
+    if val.id == "[*:1]"
+)
+
 print("replacing dummy charges with NAGL charges ... ")
 for key, charge in interchange["Electrostatics"].charges.items():
-    if charge.m == 0.0:
-        # only modify charges where dummy placeholder of 0.0 was assigned
+    if key.atom_indices[0] in nagl_indices:
+        # only modify charges where dummy placeholder of 0.0 was assigned from "[*:1]" parameter
         index = key.atom_indices[0]
 
         # must make new "single atom" topology key for each atom since the current
