@@ -12,6 +12,19 @@ import openmm.app
 import openmm.unit
 
 
+def smear_charges(molecule: Molecule) -> Molecule:
+    """Naively neutralize a molecule by smearing any non-zero total charge over all atoms."""
+    # note that Molecule.total_charge returns the sum of formal charges (think of this as
+    # "epxected" charges) not the sum partial charges (like "real" charges)
+    total_charge = sum(molecule.partial_charges)
+
+    difference = total_charge / molecule.n_atoms
+
+    molecule.partial_charges -= difference
+
+    return molecule
+
+
 def get_total_charge(system: openmm.System) -> float:
     for force in system.getForces():
         if isinstance(force, openmm.NonbondedForce):
@@ -76,6 +89,10 @@ protein.assign_partial_charges(
     partial_charge_method="openff-gnn-am1bcc-0.1.0-rc.3.pt",
     toolkit_registry=NAGLToolkitWrapper(),
 )
+
+protein = smear_charges(protein)
+
+assert round(smear_charges(protein).partial_charges.sum(), 10) == 0.0
 
 print("making Interchange ...")
 interchange = sage_ff14sb.create_interchange(
