@@ -1,28 +1,60 @@
-from openff.toolkit import Molecule, Topology, ForceField, Quantity
-from openff.toolkit.utils.nagl_wrapper import NAGLToolkitWrapper
-from openff.interchange.models import (
-    SingleAtomChargeTopologyKey,
-    LibraryChargeTopologyKey,
-    PotentialKey,
-)
-from openff.interchange.components.potentials import Potential
+import math
+from typing import Sequence
 
 import openmm
 import openmm.app
 import openmm.unit
+from openff.interchange import Interchange
+from openff.interchange.components.potentials import Potential
+from openff.interchange.models import (
+    LibraryChargeTopologyKey,
+    PotentialKey,
+    SingleAtomChargeTopologyKey,
+    TopologyKey,
+)
+from openff.toolkit import ForceField, Molecule, Quantity, Topology
+from openff.toolkit.utils.nagl_wrapper import NAGLToolkitWrapper
 
 
-def smear_charges(molecule: Molecule) -> Molecule:
-    """Naively neutralize a molecule by smearing any non-zero total charge over all atoms."""
-    # note that Molecule.total_charge returns the sum of formal charges (think of this as
-    # "epxected" charges) not the sum partial charges (like "real" charges)
-    total_charge = sum(molecule.partial_charges)
+def get_charge_sum(
+    interchange: Interchange,
+    topology_indices: Sequence[int],
+) -> Quantity:
+    charges = {
+        key.atom_indices[0]: value.m
+        for key, value in interchange["Electrostatics"].charges.items()
+    }
 
-    difference = total_charge / molecule.n_atoms
+    return Quantity(
+        sum([charges[index] for index in topology_indices]),
+        "elementary_charge",
+    )
 
-    molecule.partial_charges -= difference
 
-    return molecule
+def smear_charges(
+    interchange: Interchange,
+    topology_indices: Sequence[int],
+    charge_to_smear: Quantity,
+) -> Interchange:
+    initial_charge_sum = get_charge_sum(interchange, topology_indices)
+
+    per_atom_difference = charge_to_smear / len(topology_indices)
+
+    interchange["Electrostatics"]._charges_cached = False
+
+    for index in topology_indices:
+        topology_key = SingleAtomChargeTopologyKey(this_atom_index=index)
+        potential_key = interchange["Electrostatics"].key_map[topology_key]
+
+        interchange["Electrostatics"].potentials[potential_key].parameters[
+            "charge"
+        ] -= per_atom_difference
+
+    new_charge_sum = get_charge_sum(interchange, topology_indices)
+
+    assert math.isclose((initial_charge_sum - new_charge_sum).m, charge_to_smear.m)
+
+    return interchange
 
 
 def get_total_charge(system: openmm.System) -> float:
@@ -90,10 +122,6 @@ protein.assign_partial_charges(
     toolkit_registry=NAGLToolkitWrapper(),
 )
 
-protein = smear_charges(protein)
-
-assert round(smear_charges(protein).partial_charges.sum(), 10) == 0.0
-
 print("making Interchange ...")
 interchange = sage_ff14sb.create_interchange(
     topology,
@@ -144,6 +172,27 @@ for key_to_remove in topology_keys_to_remove:
     interchange["Electrostatics"].key_map.pop(key_to_remove)
 
 interchange["Electrostatics"]._charges_cached = False
+
+formal_charge_sum_of_nagl_indices = sum(
+    [atom.formal_charge for atom in substructure_mol.atoms]
+)
+
+charge_to_smear = (
+    get_charge_sum(interchange, nagl_indices) - formal_charge_sum_of_nagl_indices
+)
+
+interchange = smear_charges(
+    interchange=interchange,
+    topology_indices=nagl_indices,
+    charge_to_smear=charge_to_smear,
+)
+
+assert math.isclose(
+    get_charge_sum(interchange, nagl_indices).m,
+    formal_charge_sum_of_nagl_indices.m,
+    abs_tol=1e-10,
+    rel_tol=0,
+)
 
 print("making OpenMM simulation ...")
 simulation = interchange.to_openmm_simulation(
