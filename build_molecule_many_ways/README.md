@@ -1,0 +1,7 @@
+-  openff-molecule-output-lots-of-ways.ipynb:
+   - A bunch of ways to build systems and output to files
+     - including a single molecule (`monomer`)
+     - many copies of the molecule packed in box (`monomer_packed`)
+     - a molecule solvated in water (`solvated_monomer`)
+     - three different molecules in a mixture together in a box (`monomer_packed`). 
+   - All output files generated in GROMACS (`.gro`, `.top` suffixes, AMBER `.prmtop`, `.inpcrd`, and LAMMPS (`.lmp`).
