@@ -1,0 +1,23 @@
+Scripts to generate a set of ionic liquids
+
+The files in the tgz are:
+ 
+ - il0 through il9 have a series of the modified imidazole IL systems.
+
+ - des12 etc are the deep eutectic solvent files at different ratios (along with pure ethylene glycol)
+
+
+ - il_neutral10, etc are the ionic liquids with tetraglyme
+ 
+ - Note that to get packmol to run in a reasonable amount of time,
+this scripts use a really big box, so there are some enormous gaps in
+many of the structures that would need quite a lot of NPT
+equilibration.
+ 
+ - Also, the placement isn’t smart enough to put the anions and
+cations close to each other, and instead the positions are randomized;
+the files have been energy minimized, but there will likely be quite a
+bit of heat/box shrinkage as anions and cations get closer.
+ 
+Note: it's known that OpenFF currently gives very high viscosities for
+ionic liquds (there is no charge scaling), so be aware.
