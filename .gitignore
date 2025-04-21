@@ -75,6 +75,7 @@ target/
 
 # Ipython notebook checkpoints
 *.ipynb_checkpoints/
+.virtual_documents/
 
 # ignore large files created during examples
 examples/testing/test_system_conversion/out.*
