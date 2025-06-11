@@ -48,7 +48,7 @@ from openff.toolkit import ForceField
 
 interchange = ForceField("openff-2.2.1.offxml").create_interchange(topology)
 interchange
-# Interchange with 7 collections, periodic topology with 3060 atoms.
+# Interchange with 7 collections, periodic topology with 3220 atoms.
 ```
 
 This `Interchange` object represents the chemical topology - our octanol-hexane mixture - complete with force field
@@ -95,7 +95,7 @@ pprint(openmm_energies)
 Each dictionary represents a portion of the overall potential energy function. Numerically, the valence terms
 agree to 5-6 significant figures. The non-bonded interactions are a little bit more off, mostly because of minor
 differences in how vdW tail corrections are applied and inherent errors in PME calculations. We don't have to squint
-to compare them, however, as there is a handy `EnergyReport.compare` method for this:
+to compare them, however, as there is a handy `EnergyReport.compare` method for this, which raises an error if any terms differ too much:
 
 ```python
 gromacs_energies.compare(openmm_energies)
@@ -112,7 +112,7 @@ gromacs_energies.compare(openmm_energies)
 # EnergyError: {'Bond': <Quantity(0.0017857753, 'kilojoule / mole')>, 'Angle': <Quantity(-0.00267123177, 'kilojoule / mole')>, 'Torsion': <Quantity(-0.00321735958, 'kilojoule / mole')>, 'vdW': <Quantity(0.160138541, 'kilojoule / mole')>, 'Electrostatics': <Quantity(-0.398271038, 'kilojoule / mole')>}
 ```
 
-We can dig into these discrepancies a little more by passing the `detailed=True` argument to each function:
+The error lists the energy discrepancies for each term whose difference falls outside a configurable tolerance. We can dig into these discrepancies a little more by passing the `detailed=True` argument to each `get_*_energies` function:
 
 ```python
 pprint(get_gromacs_energies(interchange, detailed=True))
@@ -148,11 +148,11 @@ corrections. This is just a different representation of the same underlying phys
 potential energy in the end - but gives us more information:
 
 1. 1-4 interactions show little difference between OpenMM and GROMACS
+1. There is probably a bug in the detailed representation of vdW energies from GROMACS, as the vdW and vdW 1-4 terms do not add to the total vdW energy displayed above
 1. Differences in non-bonded energies are mostly due to long-range electrostatics
-1. There is probably a bug in the detailed representation of vdW energies from GROMACS
 1. Purely by coincidence, the energy of 1-4 electrostatics of this system happen to almost completely cancel out the rest of the electrostatic interactions - -0.4 kJ/mol looks much alongside 10 kJ/mol than +/- 800 kJ/mol!
 
-So far, we've only been comparing the energy evaluations of two engines. This makes it a little difficult to asses correctness since it's not obvious which one should be used as a reference. Interchange helpfully provides a wrapper around these and more functions which also runs these evaluations with Amber and LAMMPS (if installed):
+So far, we've only been comparing the energy evaluations of two engines. This makes it a little difficult to assess correctness since it's not obvious which one should be used as a reference. Interchange helpfully provides a wrapper around these and more functions which also runs these evaluations with Amber and LAMMPS (if installed):
 
 ```python
 from openff.interchange.drivers.all import get_summary_data, get_all_energies
