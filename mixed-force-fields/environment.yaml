@@ -1,0 +1,14 @@
+name: system-generator-replacement
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy =2
+  - ambertools =24
+  - rdkit
+  - openmm
+  - openff-toolkit ~=0.16.9
+  - openff-interchange ~=0.4.2
+  - jupyterlab
+  - openmmforcefields =0.14.2
+  - nglview
