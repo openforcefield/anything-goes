@@ -19,6 +19,14 @@ the same energies and forces as a direct Interchange parameterization
 | `03_performance_linear.ipynb` | Wall-time benchmark of Interchange vs OMMFFS for linear alkanes of increasing size (5-200 carbons). |
 | `04_performance_branched_ring.ipynb` | Wall-time benchmark for MiniDrugBank molecules and synthetic fused-ring systems, comparing performance across molecule size and ring count. |
 
+## Stress tests
+
+| Script | Purpose |
+|--------|---------|
+| `05_stress_identical.py` | 50 identical pentanes — tests template caching. Verifies energy equivalence and constraint counts. |
+| `06_stress_similar.py` | 5 alkane types x 10 copies = 50 shuffled molecules — tests template reuse with varied topologies. |
+| `07_stress_unique.py` | 20 unique functionalized alkanes (C chains with F, N, Cl substituents) — tests many distinct templates. |
+
 ## OpenMM constraint bug
 
 During this work we found a bug in OpenMM's `ForceField.createSystem()` where a
