@@ -19,6 +19,8 @@ the same energies and forces as a direct Interchange parameterization
 | `03_performance_linear.ipynb` | Wall-time benchmark of Interchange vs OMMFFS for linear alkanes of increasing size (5-200 carbons). |
 | `04_performance_branched_ring.ipynb` | Wall-time benchmark for MiniDrugBank molecules and synthetic fused-ring systems, comparing performance across molecule size and ring count. |
 
+| `08_multi_residue_topology.ipynb` | Tests manually-built molecules with 2/3/4 external bonds per residue, vsites spanning 3 residues, noncontiguous identical metadata, cross-chain molecules, and stereoisomers. |
+
 ## Stress tests
 
 | Script | Purpose |
