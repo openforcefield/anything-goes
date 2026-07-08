@@ -1,0 +1,31 @@
+name: vsite-validation
+# Environment certifying the virtual-site export validation suite.
+# openmmforcefields 0.16.0 is the first release with SMIRNOFF virtual-site +
+# multi-residue support (PRs #423, #430). Interchange is installed from `main`
+# (see the pip section) because the fix for #1498 was merged after the 0.5.3
+# release; notebook 00 asserts openff-interchange > 0.5.3.
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - openmm=8.5.2
+  - openmmforcefields=0.16.0
+  - openff-toolkit
+  - openforcefields=2026.1.0     # ships tip5p/opc/opc3/tip4p_ew/tip4p_fb.offxml + Sage 2.2/2.3
+  - openff-nagl
+  - openff-nagl-models=2025.9.0  # bundles production openff-gnn-am1bcc-1.0.0
+  - ambertools                   # AM1-BCC via sqm/antechamber
+  - packmol                      # solvation for notebooks 04, 06
+  - mdanalysis
+  - mdtraj                       # load DCD trajectories for notebook 06's view()
+  - nglview                      # in-notebook trajectory viewer (notebook 06)
+  - numpy
+  - matplotlib
+  - jupyter
+  - nbconvert
+  - ipykernel
+  - pandas
+  - pip
+  - pip:
+      # Interchange from main for the #1498 fix (post-0.5.3).
+      - "git+https://github.com/openforcefield/openff-interchange.git@main"
