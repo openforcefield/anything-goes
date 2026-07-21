@@ -11,7 +11,7 @@ dependencies:
   - openmm=8.5.2
   - openmmforcefields=0.16.0
   - openff-toolkit
-  - openforcefields=2026.1.0     # ships tip5p/opc/opc3/tip4p_ew/tip4p_fb.offxml + Sage 2.2/2.3
+  - openff-forcefields=2026.1.0     # ships tip5p/opc/opc3/tip4p_ew/tip4p_fb.offxml + Sage 2.2/2.3
   - openff-nagl
   - openff-nagl-models=2025.9.0  # bundles production openff-gnn-am1bcc-1.0.0
   - ambertools                   # AM1-BCC via sqm/antechamber
